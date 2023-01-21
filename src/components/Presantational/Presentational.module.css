@@ -1,0 +1,19 @@
+.row {
+  padding-top: 70px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 135%;
+  font-weight: 300;
+  color: #263238;
+}
+.row span {
+  font-size: 60px;
+}
+
+.textWithButtons {
+  padding-top: 40px;
+}
+.textWithButtons button {
+  font-weight: 400;
+  color: #FFA500;
+}/*# sourceMappingURL=Presentational.module.css.map */

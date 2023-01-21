@@ -1,0 +1,16 @@
+.root {
+  padding: 20px 0;
+  background-color: #F4AF60;
+  font-size: 36px;
+  color: #f1f8e9;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row a {
+  color: #f1f8e9;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}/*# sourceMappingURL=Footer.module.css.map */
