@@ -16,4 +16,53 @@
 .textWithButtons button {
   font-weight: 400;
   color: #FFA500;
+}
+
+@media (max-width: 801px) {
+  .row {
+    padding-top: 30px;
+    font-size: 36px;
+    line-height: 135%;
+    font-weight: 300;
+    color: #263238;
+  }
+  .row span {
+    font-size: 52px;
+  }
+}
+@media (max-width: 801px) {
+  .row {
+    padding-top: 30px;
+    font-size: 36px;
+    line-height: 135%;
+    font-weight: 300;
+    color: #263238;
+  }
+  .row span {
+    font-size: 52px;
+  }
+}
+@media (max-width: 641px) {
+  .row {
+    font-size: 32px;
+  }
+  .row span {
+    font-size: 46px;
+  }
+}
+@media (max-width: 481px) {
+  .row {
+    font-size: 26px;
+  }
+  .row span {
+    font-size: 40px;
+  }
+}
+@media (max-width: 381px) {
+  .row {
+    font-size: 23px;
+  }
+  .row span {
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=Presentational.module.css.map */

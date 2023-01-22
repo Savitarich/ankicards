@@ -6,6 +6,10 @@ body{
     font-weight: 400;
     background-color: #f1f8e9;
 }
+input{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 18px;
+}
 .container{
     max-width: 1220px;
     padding: 0 10px;
@@ -13,4 +17,15 @@ body{
 }
 main{
     min-height: calc(100vh - 163.3px);
+} 
+
+@media (max-width: 801px){
+    main{
+        min-height: calc(100vh - 132px);
+    } 
+}
+@media (max-width: 541px){
+    main{
+        min-height: calc(100vh - 212.66px);
+    } 
 }

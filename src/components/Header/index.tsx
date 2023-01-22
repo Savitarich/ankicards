@@ -1,9 +1,19 @@
 import React from "react";
 import style from "./Header.module.css";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setIsLogin, setIsRegister } from "../../redux/slices/modalsSlice";
 
 export const Header: React.FC = () => {
     const { root, row, logoBlock, nav, buttonRow } = style;
+    const dispatch = useDispatch();
+
+    const onClickIsLogin = () => {
+        dispatch(setIsLogin());
+    };
+    const onClickIsRegister = () => {
+        dispatch(setIsRegister());
+    };
 
     const isAuth = false;
     //!!!
@@ -19,11 +29,9 @@ export const Header: React.FC = () => {
                                 <svg
                                     viewBox='0 0 64 64'
                                     xmlns='http://www.w3.org/2000/svg'
-                                    style={{
-                                        fill: "#f1f8e9",
-                                        width: "60px",
-                                        height: "60px",
-                                    }}
+                                    width={60}
+                                    height={60}
+                                    fill='#f1f8e9'
                                 >
                                     <defs></defs>
                                     <title />
@@ -42,8 +50,12 @@ export const Header: React.FC = () => {
                                 <button>Выйти</button>
                             ) : (
                                 <div className={buttonRow}>
-                                    <button>Войти</button>
-                                    <button>Зарегистрироваться</button>
+                                    <button onClick={onClickIsLogin}>
+                                        Войти
+                                    </button>
+                                    <button onClick={onClickIsRegister}>
+                                        Зарегистрироваться
+                                    </button>
                                 </div>
                             )}
                         </nav>

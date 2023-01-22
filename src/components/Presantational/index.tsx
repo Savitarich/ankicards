@@ -1,8 +1,18 @@
 import React from "react";
 import style from "./Presentational.module.css";
+import { useDispatch } from "react-redux";
+import { setIsLogin, setIsRegister } from "../../redux/slices/modalsSlice";
 
 export const Presentational: React.FC = () => {
     const { row, textWithButtons } = style;
+    const dispatch = useDispatch();
+
+    const onClickIsLogin = () => {
+        dispatch(setIsLogin());
+    };
+    const onClickIsRegister = () => {
+        dispatch(setIsRegister());
+    };
     return (
         <>
             <div className='container'>
@@ -16,8 +26,12 @@ export const Presentational: React.FC = () => {
                     </p>
                     <p className={textWithButtons}>
                         Чтобы воспользоваться всеми возможностями AnkiCards
-                        <button>Войдите</button> или{" "}
-                        <button>Зарегистрируйтесь</button>
+                        <button onClick={onClickIsLogin}>
+                            Войдите
+                        </button> или{" "}
+                        <button onClick={onClickIsRegister}>
+                            Зарегистрируйтесь
+                        </button>
                     </p>
                 </div>
             </div>

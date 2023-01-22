@@ -35,4 +35,25 @@
 .buttonRow {
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 801px) {
+  .logoBlock {
+    font-size: 32px;
+  }
+  .logoBlock svg {
+    width: 42px;
+    height: 42px;
+  }
+  .nav button {
+    padding: 10px 10px;
+    font-size: 19px;
+  }
+}
+@media (max-width: 541px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
 }/*# sourceMappingURL=Header.module.css.map */
